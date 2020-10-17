@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+>
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ploneconf.policy2020"
+      directory="profiles/default"
+      description="Installs the ploneconf.policy2020 add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="ploneconf.policy2020 (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the ploneconf.policy2020 add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+</configure>

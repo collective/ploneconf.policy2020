@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    name="Document"
+    meta_type="Dexterity FTI"
+    i18n:domain="plone"
+    purge="false">
+  <property name="behaviors" purge="false">
+    <element value="ploneconf.policy2020.behaviors.hero.IHeroTextBehavior"/>
+    <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImageBehavior"/>
+  </property>
+</object>

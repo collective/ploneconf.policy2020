@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.IFilterSchema"
+           prefix="plone">
+    <value key="valid_tags"
+           purge="False">
+      <element>hr</element>
+    </value>
+    <value key="custom_attributes"
+           purge="False">
+      <element>role</element>
+      <element>style</element>
+    </value>
+  </records>
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+           prefix="plone">
+    <value key="block_styles"
+           purge="False">
+      <element>Submit Button|submitbutton</element>
+    </value>
+     <value key="formats">{
+    "discreet": {
+        "inline": "span",
+        "classes": "discreet"
+    },
+    "clearfix": {
+        "block": "div",
+        "classes": "clearfix"
+    },
+    "submitbutton": {
+        "selector": "a",
+        "classes": "btn btn-primary btn-lg",
+        "attributes": {
+            "role": "button"
+        }
+    }
+}</value>
+  </records>
+
+</registry>
